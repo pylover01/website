@@ -19,12 +19,18 @@ class Users(models.Model):
 class Blog(models.Model):
     blog_image = models.ImageField(upload_to=filepath, null=True, blank=True)
     blog_title = models.CharField(max_length=200)
-    blog_body = models.CharField(max_length=2000)
+    blog_body = models.TextField(null=True, blank=True)
     blog_dateTime = models.DateTimeField(null=True)
     blog_type = models.CharField(max_length=100, null=True)
+
+    def __str__(self):
+        return self.blog_title
     
 class Work(models.Model):
     work_image=models.ImageField(upload_to=filepath, null=True, blank=True )
     work_title=models.CharField(max_length=200)
     work_tools=models.CharField(max_length=200)
     work_url=models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.work_title
