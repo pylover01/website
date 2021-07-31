@@ -1,9 +1,7 @@
 from django.db import models
-from django.core.files.storage import FileSystemStorage
 import datetime
 import os
 
-fs = FileSystemStorage(location='/media/photos')
 
 def filepath(request, filename):
     old_file = filename
@@ -25,3 +23,8 @@ class Blog(models.Model):
     blog_dateTime = models.DateTimeField(null=True)
     blog_type = models.CharField(max_length=100, null=True)
     
+class Work(models.Model):
+    work_image=models.ImageField(upload_to=filepath, null=True, blank=True )
+    work_title=models.CharField(max_length=200)
+    work_tools=models.CharField(max_length=200)
+    work_url=models.CharField(max_length=200)

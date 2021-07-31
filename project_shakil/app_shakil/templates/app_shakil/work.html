@@ -17,126 +17,25 @@
           </div>
         </div>
         <div class="row">
+          {% if latest_work_data %}
+              {% for info in latest_work_data %}
           <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-            <div class="project" style="background-image:url( {% static 'app_shakil/images/xwork-1.jpg.pagespeed.ic.OEL2iVM1eN.jpg' %} )">
+            <div class="project" style="background-image:url( {{ info.work_image.url }} )">
               <div class="desc">
                 <div class="con">
-                  <h3><a href="work-single.html">Work 01</a></h3>
-                  <span>Branding, Ilustration</span>
+                  <h3><a href="{{ info.work_url }}" target="_blank">{{ info.work_title }}</a></h3>
+                  <span>{{ info.work_tools }}</span>
                   <p class="icon">
-                    <span><a href="#"><i class="icon-share3"></i></a></span>
-                    <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                    <span><a href="#"><i class="icon-heart"></i> 49</a></span>
+                    <span><a href="#"><i class="fas fa-share-alt"></i></a></span>
+                    <span><a href="#"><i class="far fa-eye"></i> 100</a></span>
+                    <span><a href="#"><i class="far fa-heart"></i> 49</a></span>
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-            <div class="project" style="background-image:url(images/xwork-2.jpg.pagespeed.ic.TljkJsUn4p.jpg)">
-              <div class="desc">
-                <div class="con">
-                  <h3><a href="work-single.html">Work 02</a></h3>
-                  <span>Logo, Web, Branding</span>
-                  <p class="icon">
-                    <span><a href="#"><i class="icon-share3"></i></a></span>
-                    <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                    <span><a href="#"><i class="icon-heart"></i> 49</a></span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-            <div class="project" style="background-image:url(images/xwork-3.jpg.pagespeed.ic.Y8B9JMYI8f.jpg)">
-              <div class="desc">
-                <div class="con">
-                  <h3><a href="work-single.html">Work 03</a></h3>
-                  <span>Illustration, Logo</span>
-                  <p class="icon">
-                    <span><a href="#"><i class="icon-share3"></i></a></span>
-                    <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                    <span><a href="#"><i class="icon-heart"></i> 49</a></span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-            <div class="project" style="background-image:url(images/xwork-4.jpg.pagespeed.ic.ZnjJPhDD4r.jpg)">
-              <div class="desc">
-                <div class="con">
-                  <h3><a href="work-single.html">Work 04</a></h3>
-                  <span>Web, Logo, Branding</span>
-                  <p class="icon">
-                    <span><a href="#"><i class="icon-share3"></i></a></span>
-                    <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                    <span><a href="#"><i class="icon-heart"></i> 49</a></span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-            <div class="project" style="background-image:url(images/xwork-5.jpg.pagespeed.ic.sZVtX00vex.jpg)">
-              <div class="desc">
-                <div class="con">
-                  <h3><a href="work-single.html">Work 05</a></h3>
-                  <span>Illustration, Logo</span>
-                  <p class="icon">
-                    <span><a href="#"><i class="icon-share3"></i></a></span>
-                    <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                    <span><a href="#"><i class="icon-heart"></i> 49</a></span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-            <div class="project" style="background-image:url(images/xwork-6.jpg.pagespeed.ic.xstRjjMFb8.jpg)">
-              <div class="desc">
-                <div class="con">
-                  <h3><a href="work-single.html">Work 06</a></h3>
-                  <span>Web, Logo, Branding</span>
-                  <p class="icon">
-                    <span><a href="#"><i class="icon-share3"></i></a></span>
-                    <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                    <span><a href="#"><i class="icon-heart"></i> 49</a></span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-            <div class="project" style="background-image:url(images/xwork-7.jpg.pagespeed.ic.x7Gpz9OpIQ.jpg)">
-              <div class="desc">
-                <div class="con">
-                  <h3><a href="work-single.html">Work 07</a></h3>
-                  <span>Illustration, Logo</span>
-                  <p class="icon">
-                    <span><a href="#"><i class="icon-share3"></i></a></span>
-                    <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                    <span><a href="#"><i class="icon-heart"></i> 49</a></span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-            <div class="project" style="background-image:url(images/xwork-8.jpg.pagespeed.ic.PTHN9Es-fb.jpg)">
-              <div class="desc">
-                <div class="con">
-                  <h3><a href="work-single.html">Work 08</a></h3>
-                  <span>Web, Logo, Branding</span>
-                  <p class="icon">
-                    <span><a href="#"><i class="icon-share3"></i></a></span>
-                    <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                    <span><a href="#"><i class="icon-heart"></i> 49</a></span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+            {% endfor %}
+          {% endif %}
         </div>
         <div class="row">
           <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
