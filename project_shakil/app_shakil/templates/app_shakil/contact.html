@@ -46,8 +46,14 @@
             </div>
             <div class="col-md-7 col-md-pull-5">
               <div class="row">
+                {% if message_name %}
+                <center>
+                  <h2>Thank you {{ message_name }}!</h2>
+                  <p>We received your message, We will contact you shortly...</p>
+                </center>
+                {% else %}
                 <div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInLeft">
-                  <form method="POST">
+                  <form action="{% url 'send_message' %}" method="POST"> {% csrf_token %}
                     <div class="form-group">
                       <input type="text" class="form-control" name="message_name" placeholder="Name" required>
                     </div>
@@ -66,6 +72,7 @@
                     </div>
                   </form>
                 </div>
+                {% endif %}
               </div>
             </div>
           </div>

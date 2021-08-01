@@ -41,9 +41,8 @@ def send_message(request):
             message_email,
             message_phone,
             message_body,
-            ['info@service-shakil.com']
+            ['shakil.cse.uoda@gmail.com'],
         )
-
-        return render(request, 'app_shakil/contact.html', {'message_name':message_name})
+        return render(request, 'app_shakil/contact.html', {'message_name': message_name})
     else:
         return render(request, 'app_shakil/contact.html', {})
