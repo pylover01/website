@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'project_shakil.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'service_shakil',                  
-        'USER': 'shakil',             
-        'PASSWORD': 'shakil387029@',                  
+        'NAME': '',                  
+        'USER': '',             
+        'PASSWORD': '@',                  
         'HOST': '',                     
         'PORT': '',                      
     }
@@ -134,6 +134,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #email settings
 EMAIL_HOST = ''
 EMAIL_PORT = ''
-EMAIL_HOST_USER='info@service-shakil.com'
-EMAIL_HOST_PASSWORD='xN!9SYeLLK=G'
+EMAIL_HOST_USER=''
+EMAIL_HOST_PASSWORD=''
 EMAIL_USE_TLS=True
