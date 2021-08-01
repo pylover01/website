@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'app_shakil.apps.AppShakilConfig',
+    'django_social_share',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

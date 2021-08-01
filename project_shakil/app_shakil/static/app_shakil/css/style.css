@@ -4874,19 +4874,19 @@ body.offcanvas {
   box-shadow: none !important;
   border: none; }
 
-.panel-heading a:after {
-  font-family: "icomoon";
-  content: "\ea0e";
-  position: absolute;
-  right: 20px;
-  font-size: 20px;
-  font-weight: 400;
-  top: 50%;
-  line-height: 1;
-  margin-top: -10px; }
-
-.panel-heading a.collapsed:after {
-  content: "\ea1c"; }
+  .panel-heading a:after {
+    font-family: "icomoon";
+    content: "-";
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    top: 50%;
+    line-height: 1;
+    margin-top: -10px; }
+  
+  .panel-heading a.collapsed:after {
+    content: "+"; }
 
 .panel-heading a.collapsed {
   background: #fafafa;
