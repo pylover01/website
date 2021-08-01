@@ -135,5 +135,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_HOST = ''
 EMAIL_PORT = ''
 EMAIL_HOST_USER='info@service-shakil.com'
-EMAIL_HOST_PASSWORD=''
+EMAIL_HOST_PASSWORD='working'
 EMAIL_USE_TLS=True
