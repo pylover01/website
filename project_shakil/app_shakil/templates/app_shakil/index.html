@@ -1,0 +1,308 @@
+{% extends 'app_shakil/base.html' %}
+{% load static %}
+
+{% block pagecontent %}
+<!-- Back to top function end here -->
+  <div id="colorlib-page">
+    <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+    <!-- Include menu here -->
+    {% include 'app_shakil/menu.html' %}
+    <!-- menu end here -->
+    <div id="colorlib-main">
+      <aside id="colorlib-hero" class="js-fullheight">
+        <div class="flexslider js-fullheight">
+          <ul class="slides">
+            <li style="background-image:url( {% static 'app_shakil/images/slide_image_01.jpg' %} )">
+              <div class="overlay"></div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2 col-md-pull-2 js-fullheight slider-text">
+                    <div class="slider-text-inner">
+                      <div class="desc">
+                        <h1>Web Development</h1>
+                        <h2>by Python framwork #Django & #Flask</h2>
+                        <p><a href="/contact/" class="btn btn-primary btn-learn">CONTACT ME! <i class="fas fa-caret-right"></i></a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li style="background-image:url( {% static 'app_shakil/images/slide_image_02.jpg' %} )">
+              <div class="overlay"></div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2 col-md-pull-2 js-fullheight slider-text">
+                    <div class="slider-text-inner">
+                      <div class="desc">
+                        <h1>Graphic Design &amp; UI Design</h1>
+                        <h2>by Adobe Photoshop & Adobe XD</h2>
+                        <p><a href="/contact/" class="btn btn-primary btn-learn">CONTACT ME! <i class="fas fa-caret-right"></i></a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li style="background-image:url( {% static 'app_shakil/images/slide_image_03.jpg' %} )">
+              <div class="overlay"></div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2 col-md-pull-2 js-fullheight slider-text">
+                    <div class="slider-text-inner">
+                      <div class="desc">
+                        <h1>Problem solver</h1>
+                        <h2>I'm solving problem on "URI ONLINE JUDGE" used various language like Programming in C, C++, Java and Python </h2>
+                        <p><a href="/contact/" class="btn btn-primary btn-learn">CONTACT ME! <i class="fas fa-caret-right"></i></a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="colorlib-about" id="about-category"> 
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="about-img animate-box" data-animate-effect="fadeInLeft"
+                style="background-image:url( {% static 'app_shakil/images/shakil_portfolio_background.jpg' %} )">
+                <div class="about-img-2 animate-box" data-animate-effect="fadeInRight"
+                  style="background-image:url( {% static 'app_shakil/images/shakil_portfolio_image.jpg' %} )"></div>
+              </div>
+            </div>
+            <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+              <div class="about-desc">
+                <span class="heading-meta">Welcome &amp; Introduce</span>
+                <h3>HELLO! my name is Shakil Ahmed Khan!</h3>
+                <p>Thanks for viewing my profile. I completed my B.Sc In Computer Science and Engineering 2019.  I'm enthusiastic about programming, web development, and software development. I choose to work with the Python programming language and I love to work with it. I love Django which is the best Python web Framework. I worked on Flask also. </p>
+              </div>
+              <div class="fancy-collapse-panel">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                          aria-controls="collapseOne">Why choose me?
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                      aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p>I'm a confident and self-learner. Also, I love to work with the team. I'm able to solve problems myself.</p>
+                          </div>
+                          <div class="col-md-6">
+                            <p>I have experience in problem-solving. So, I'm able to find out the solution based on the problem.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                          aria-expanded="false" aria-controls="collapseTwo">What I do?
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        <p>I'm able to work on any kind of web development project include a personal website, App showcase website, Ecommerce website and Python programming works, Graphic Desiging and UI Design. </p>
+                        <ul>
+                          <li><strong>Usually I used:</strong></li>
+                          <li>Python Programming Language</li>
+                          <li>Python framework #Django, #Flask</li>
+                          <li>Javascipt, HTML5, CSS</li>
+                          <li>Adobe Photoshop and Adobe XD</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                          aria-expanded="false" aria-controls="collapseThree">My Specialties
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                      aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <ul>
+                          <li>Self Motivated</li>
+                          <li>Love to know new things</li>
+                          <li>work with challenge</li>
+                          <li>work with the complex problem</li>
+                          <li>New technology self-learning</li>
+                          <li>Work under pressure</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="colorlib-services" id="service-category">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-md-pull-3">
+              <span class="heading-meta">What I do?</span>
+              <h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Here are some of my expertise
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">
+                <div class="colorlib-icon">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <div class="colorlib-text">
+                  <h3>Web Developemtn</h3>
+                  <p> I will develop your website useing best Python framework Django and for small website, I can Developement them use Flask of python light framework.</p>
+                </div>
+              </div>
+              <div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">
+                <div class="colorlib-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <div class="colorlib-text">
+                  <h3>Software Developemtn</h3>
+                  <p>I love to work with software development using Python Programming language (Include OOP) and Python Framework and library.</p>
+                </div>
+              </div>
+              <div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">
+                <div class="colorlib-icon">
+                  <i class="fas fa-exclamation"></i>
+                </div>
+                <div class="colorlib-text">
+                  <h3>Problem solver</h3>
+                  <p>I'm practicing problem solving on "URI ONLINE JUDGE". I have 99 solved problem on various language like Programming in C, OOP C++, Java and Python.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">
+                <div class="colorlib-icon">
+                  <i class="fas fa-pencil-ruler"></i>
+                </div>
+                <div class="colorlib-text">
+                  <h3>Graphic Design</h3>
+                  <p>Graphic Design gives great support to web development. Where I have professional experience on it. So, It helps me to support where needed.</p>
+                </div>
+              </div>
+              <div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">
+                <div class="colorlib-icon">
+                  <i class="fab fa-uikit"></i>
+                </div>
+                <div class="colorlib-text">
+                  <h3>User Interface</h3>
+                  <p>I believed a Web Developer should know about UI Design. It helps to understand the fond-end also. I have experience work in UI Design. So, It helps me develop software.</p>
+                </div>
+              </div>
+              <div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">
+                <div class="colorlib-icon">
+                  <i class="fas fa-hands-helping"></i>
+                </div>
+                <div class="colorlib-text">
+                  <h3>Help &amp; Support</h3>
+                  <p>I believe it's a great quality of a human who takes help and support and gives help and support where necessary.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="colorlib-work" id="work-category">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-md-pull-3">
+              <span class="heading-meta">My Work</span>
+              <h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Recent Work</h2>
+            </div>
+          </div>
+          <div class="row">
+            {% if latest_work_data %}
+              {% for info in latest_work_data|slice:":4" %}
+              <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                <div class="project" style="background-image:url( {{ info.work_image.url }} )">
+                  <div class="desc">
+                    <div class="con">
+                      <h3><a href="{{ info.work_url }}" target="_blank">{{ info.work_title }}</a></h3>
+                      <span>{{ info.work_tools }}</span>
+                      <p class="icon">
+                        <span><a href="#" class="social_share_btn" target="_blank"><i class="fas fa-share-alt"></i></a></span>
+                        <span><a href="#"><i class="far fa-eye"></i> 100</a></span>
+                        <span><a href="#"><i class="far fa-heart"></i> 49</a></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="colorlib-blog" id="blog-category">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-md-pull-3">
+              <span class="heading-meta">Read</span>
+              <h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Recent Blog</h2>
+            </div>
+          </div>
+          <div class="row">
+            {% if latest_blog_data %}
+              {% for info in latest_blog_data|slice:":3" %}
+              <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+                
+                  <div class="blog-entry">
+                    <a href="{% url 'blog_details' info.id %}" target="_blank" class="blog-img"><img src="{{ info.blog_image.url }}" class="img-responsive" alt="Blog image" data-pagespeed-url-hash="1358550539" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                    <div class="desc">
+                      <span><small>{{ info.blog_dateTime }} </small> | <small> {{ info.blog_type }} </small> | <small> <i class="fab fa-readme"></i>
+                          4</small></span>
+                      <h3><a href="blog.html">{{ info.blog_title }}</a></h3>
+                      <p>{{ info.blog_body|slice:":100" }}
+                      </p>
+                      <a href="blog.html" class="lead">Read More <i class="fas fa-caret-right"></i>
+                    </div>
+                  </div>
+                  
+              </div>
+              {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <!-- get in touch start from here -->
+      <div id="get-in-touch" class="colorlib-bg-color">
+        <div class="colorlib-narrow-content">
+          <div class="row">
+            <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+              <h2>Get in Touch!</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+              <p class="colorlib-lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a
+                large language ocean.</p>
+              <p><a href="/contact/" class="btn btn-primary btn-learn">Contact me!</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- get in touch end here -->
+    </div>
+  </div>
+{% endblock %}
