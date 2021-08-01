@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'project_shakil.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'service_shakil',                  
-        'USER': 'shakil',             
-        'PASSWORD': 'shakil387029@',                  
+        'NAME': '',                  
+        'USER': '',             
+        'PASSWORD': '@',                  
         'HOST': '',                     
         'PORT': '',                      
     }
